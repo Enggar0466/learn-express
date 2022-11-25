@@ -26,7 +26,7 @@ app.post('/api/nims', (req,res) =>{
     }
 
     const nim = {
-        id: nims[nims.length].id + 1,
+        id: nims[nims.length-1].id + 1,
         name: req.body.name
     };
     nims.push(nim);
